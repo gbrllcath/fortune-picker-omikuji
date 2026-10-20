@@ -1,0 +1,287 @@
+:root {
+    --paper: #FBF4E6;
+    --red: #C8432B;
+    --ink: #3A2E2A;
+    --sakura: #F6D5D1;
+    --gold: #D4A24C;
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+/* typography */
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1, h2 {
+    color: var(--paper);
+    margin: 0;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+h3 {
+    margin: 25px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+/* layout */
+
+header {
+    background-color: var(--red);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 370px;
+    width: 90%;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.header-img {
+    width: 70px;
+}
+
+.controls-container {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 0px auto;
+}
+
+/* controls */
+
+.category-radios {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--gold);
+    padding: 4px 8px;
+}
+
+.radio:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.radio:last-child {
+    border-bottom: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+label {
+    font-size: 14px;
+    padding: 3px;
+    width: 100%;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.highlight {
+    background-color: var(--sakura);
+    color: var(--red);
+    font-weight: bold;
+    accent-color: var(--red);
+}
+
+input[type="radio"] {
+    cursor: pointer;
+}
+
+.lucky-draw {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+    padding: 4px 8px;
+    margin: 16px 0;
+}
+
+.lucky-draw-label {
+    font-size: 14px;
+    padding: 3px;
+    width: 100%;
+    cursor: pointer;
+    text-transform: none;
+}
+
+.lucky-draw input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.or-divider {
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.7;
+    margin: 12px 0 0;
+}
+
+.get-fortune-btn {
+    background-color: var(--red);
+    color: var(--paper);
+    padding: 15px 19px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+/* modal */
+
+.fortuneslip-modal {
+    display: none; /*flex when displayed*/
+    position: fixed;
+    margin: auto;
+    top: 60px;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    padding: 32px 24px 24px;
+    background-color: var(--paper);
+    border: 2px solid var(--gold);
+    border-radius: 12px;
+    text-align: center;
+    animation: slip-in 0.35s ease-out;
+}
+
+@keyframes slip-in {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.fortuneslip-modal.closing {
+    animation: slip-out 0.25s ease-in forwards;
+}
+
+@keyframes slip-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.slip-img {
+    /* ...what you already have... */
+    animation: slip-drop 0.5s ease-out 0.1s both;
+}
+
+@keyframes slip-drop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fortuneslip-modal-close-btn {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    background-color: transparent;
+    border: none;
+    color: #555;
+    border-radius: 50%;
+    padding: 4px 7px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.fortuneslip-modal-close-btn:hover {
+    color: white;
+    background-color: var(--red);
+}
+
+/* slip (inside the modal) */
+
+.slip-category {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--red);
+    margin: 0 0 12px;
+}
+
+.slip-img {
+    height: 220px;
+    width: auto;
+    margin-bottom: 12px;
+}
+
+.slip-rank {
+    color: var(--ink);
+    font-size: 26px;
+}
+
+.slip-divider {
+    width: 60px;
+    height: 2px;
+    background: var(--gold);
+    margin: 12px auto;
+}
+
+.slip-message {
+    font-size: 15px;
+    max-width: 240px;
+    margin: 0 auto 8px;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 24px 16px;
+    opacity: 0.7;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+footer a {
+    color: var(--red);
+}

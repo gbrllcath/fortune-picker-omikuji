@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Paper Fortune</title>
+	<link rel="stylesheet" href="index.css">
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div class="header-inner">
+			<img src="./images/omikuji2.png" class="header-img" alt="Omikuji fortune box">
+			<div>
+				<h1>A Small Fortune</h1>
+				<h2>inspired by Japanese omikuji.</h2>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<h3>What are you hoping for today?</h3>
+		<div class="controls-container">
+			<div class="category-radios" id="category-radios"></div>
+			<p class="or-divider">or get a random fortune</p>
+			<div class="lucky-draw" id="lucky-draw">
+				<label for="lucky-draw-option" class="lucky-draw-label">Lucky Draw</label>
+				<input type="checkbox" id="lucky-draw-option">
+			</div>
+			<button class="get-fortune-btn" id="get-fortune-btn">Draw Fortune</button>
+		</div>
+	</main>
+
+	<div class="fortuneslip-modal" id="fortuneslip-modal">
+		<button class="fortuneslip-modal-close-btn" id="fortuneslip-modal-close-btn">X</button>
+		<div id="fortuneslip-modal-inner"></div>
+	</div>
+
+	<footer>
+		<p>Just for fun. Inspired by omikuji, not a real prediction.</p>
+		<p>Illustrations by <a href="https://japaclip.com/en/" target="_blank">Japaclip</a> and <a href="https://illustcenter.com/en/" target="_blank">IllustCenter</a>.</p>
+	</footer>
+
+	<script src="index.js" type="module"></script>
+</body>
+
+</html>
