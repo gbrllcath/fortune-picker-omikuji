@@ -1,6 +1,6 @@
 export const fortuneData = [
     { 
-        categoryTags: ["love"], rank: "Great Luck", rankImage: "great-luck.png", alt: "Great Luck fortune slip", message: "Someone is thinking of you right now. Say hello first." },
+        categoryTags: ["love"], rank: "Great Luck", rankImage: "great-luck.png", alt: "Great Luck fortune slip", message: "Someone is thinking of you right now. You will hear from them soon." },
     { 
         categoryTags: ["love"], rank: "Good Luck", rankImage: "good-luck.png", alt: "Good Luck fortune slip", message: "Be kind to yourself first. The rest will follow." },
     { 
@@ -15,6 +15,8 @@ export const fortuneData = [
         categoryTags: ["love"], rank: "Luck Ahead", rankImage: "luck-ahead.png", alt: "Luck Ahead fortune slip", message: "What you seek is also seeking you. It walks slowly, but it walks." },
     { 
         categoryTags: ["love"], rank: "Oops", rankImage: "oops.png", alt: "Oops fortune slip", message: "A message may be misunderstood today. Say it again, more gently." },
+    { 
+        categoryTags: ["love"], rank: "Great Luck", rankImage: "great-luck.png", alt: "Great Luck fortune slip", message: "A kind heart will soon meet one that understands it. Be ready to smile." },
 
     { 
         categoryTags: ["study"], rank: "Great Luck", rankImage: "great-luck.png", alt: "Great Luck fortune slip", message: "A tricky topic is about to click. Take a breath and try once more." },
@@ -32,6 +34,8 @@ export const fortuneData = [
         categoryTags: ["study"], rank: "Half Luck", rankImage: "half-luck.png", alt: "Half Luck fortune slip", message: "The answer is a shy bird. Sit still and it lands on its own." },
     { 
         categoryTags: ["study"], rank: "Oops", rankImage: "oops.png", alt: "Oops fortune slip", message: "What you find the moment you stop looking: Your pen, right behind your ear." },
+    { 
+        categoryTags: ["study"], rank: "Great Luck", rankImage: "great-luck.png", alt: "Great Luck fortune slip", message: "A humble student soon outgrows the teacher." },
 
 
     { 
@@ -52,6 +56,8 @@ export const fortuneData = [
         categoryTags: ["work"], rank: "Small Luck", rankImage: "small-luck.png", alt: "Small Luck fortune slip", message: "The thread you almost dropped is the one that holds the whole cloth." },
     { 
         categoryTags: ["work"], rank: "Oops", rankImage: "oops.png", alt: "Oops fortune slip", message: "A plan will wobble today. It will work out in the end." },
+    { 
+        categoryTags: ["work"], rank: "Great Luck", rankImage: "great-luck.png", alt: "Great Luck fortune slip", message: "Your patient efforts will soon be noticed by someone important." },
 
     { 
         categoryTags: ["health"], rank: "Great Luck", rankImage: "great-luck.png", alt: "Great Luck fortune slip", message: "Energy is blooming. A short walk will do wonders." },
@@ -60,7 +66,7 @@ export const fortuneData = [
     { 
         categoryTags: ["health"], rank: "Half Luck", rankImage: "half-luck.png", alt: "Half Luck fortune slip", message: "Your body wants rest, your to-do list wants action. Split the difference." },
     { 
-        categoryTags: ["health"], rank: "Small Luck", rankImage: "small-luck.png", alt: "Small Luck fortune slip", message: "Breathe slowly three times. The day looks different afterwards." },
+        categoryTags: ["health"], rank: "Small Luck", rankImage: "small-luck.png", alt: "Small Luck fortune slip", message: "Take a breather. The day will look different afterwards." },
     { 
         categoryTags: ["health"], rank: "Luck Ahead", rankImage: "luck-ahead.png", alt: "Luck Ahead fortune slip", message: "The rest you take now becomes the energy you'll need later." },
     { 
@@ -69,6 +75,8 @@ export const fortuneData = [
         categoryTags: ["health"], rank: "Luck Ahead", rankImage: "luck-ahead.png", alt: "Luck Ahead fortune slip", message: "Winter is only the soil getting ready. Spring remembers everything." },
     { 
         categoryTags: ["health"], rank: "Oops", rankImage: "oops.png", alt: "Oops fortune slip", message: "A little tiredness may follow you around. Be gentle and it will leave sooner." },
+    { 
+        categoryTags: ["health"], rank: "Great Luck", rankImage: "great-luck.png", alt: "Great Luck fortune slip", message: "A season of good health is on its way. Your body will thank you." },
 
     { 
         categoryTags: ["luck"], rank: "Great Luck", rankImage: "great-luck.png", alt: "Great Luck fortune slip", message: "A lucky moment is hiding in your day. Look twice." },
@@ -88,6 +96,8 @@ export const fortuneData = [
         categoryTags: ["luck"], rank: "Half Luck", rankImage: "half-luck.png", alt: "Half Luck fortune slip", message: "A coin in the air is neither side yet. Hold your breath, then smile." },
     { 
         categoryTags: ["luck"], rank: "Oops", rankImage: "oops.png", alt: "Oops fortune slip", message: "A small cloud crosses your sun. By evening you will have forgotten it." },
+    { 
+        categoryTags: ["luck"], rank: "Great Luck", rankImage: "great-luck.png", alt: "Great Luck fortune slip", message: "The curious traveler finds the open door. Take the road you have not tried." },
 
     {
         categoryTags: ["travel"], rank: "Good Luck", rankImage: "good-luck.png", alt: "Good Luck fortune slip", message: "Smooth roads ahead. Bring a snack." },
@@ -105,6 +115,8 @@ export const fortuneData = [
         categoryTags: ["travel"], rank: "Good Luck", rankImage: "good-luck.png", alt: "Good Luck fortune slip", message: "Every road is a sentence. Today's will end somewhere unexpected." },
     { 
         categoryTags: ["travel"], rank: "Small Luck", rankImage: "small-luck.png", alt: "Small Luck fortune slip", message: "The map is not the place. Put it down for a little while." },
+    { 
+        categoryTags: ["travel"], rank: "Great Luck", rankImage: "great-luck.png", alt: "Great Luck fortune slip", message: "A journey you have not planned yet will bring you great joy." },
 
 
     { 
@@ -123,6 +135,8 @@ export const fortuneData = [
         categoryTags: ["money"], rank: "Luck Ahead", rankImage: "luck-ahead.png", alt: "Luck Ahead fortune slip", message: "A seed doesn't count its days underground. Neither should you." },
     { 
         categoryTags: ["money"], rank: "Oops", rankImage: "oops.png", alt: "Oops fortune slip", message: "A small cost will appear without warning. Breathe, pay it, and let it go." },
+    { 
+        categoryTags: ["money"], rank: "Great Luck", rankImage: "great-luck.png", alt: "Great Luck fortune slip", message: "Fortune favors the bold. Take the first step and it will go your way." },
 
     { 
         categoryTags: ["wish"], rank: "Great Luck", rankImage: "great-luck.png", alt: "Great Luck fortune slip", message: "Wishes are warmer when you work toward them. Yours is closer than it looks." },
@@ -139,7 +153,9 @@ export const fortuneData = [
     { 
         categoryTags: ["wish"], rank: "Great Luck", rankImage: "great-luck.png", alt: "Great Luck fortune slip", message: "The star you wished on has already begun its journey back to you." },
     { 
-        categoryTags: ["wish"], rank: "Oops", rankImage: "oops.png", alt: "Oops fortune slip", message: "Your wish may arrive a little late and slightly unexpected. It is still yours." }
+        categoryTags: ["wish"], rank: "Oops", rankImage: "oops.png", alt: "Oops fortune slip", message: "Your wish may arrive a little late and slightly unexpected. It is still yours." },
+    { 
+        categoryTags: ["wish"], rank: "Great Luck", rankImage: "great-luck.png", alt: "Great Luck fortune slip", message: "Your wish is heard and will be granted. Wait with a light heart." }
 ]
 
 
