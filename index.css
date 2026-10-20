@@ -175,6 +175,9 @@ input[type="radio"] {
     border-radius: 12px;
     text-align: center;
     animation: slip-in 0.35s ease-out;
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 340px;
 }
 
 @keyframes slip-in {
