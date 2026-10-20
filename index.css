@@ -71,6 +71,20 @@ header {
     margin: 0px auto;
 }
 
+.backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(58, 46, 42, 0.5);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.backdrop.show {
+    display: block;
+    opacity: 1;
+}
+
 /* controls */
 
 .category-radios {
@@ -155,6 +169,12 @@ input[type="radio"] {
     border-radius: 5px;
     margin-bottom: 8px;
     cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.get-fortune-btn:disabled {
+    opacity: 50%;
+    cursor: not-allowed;
 }
 
 /* modal */
@@ -178,6 +198,7 @@ input[type="radio"] {
     box-sizing: border-box;
     width: 90%;
     max-width: 340px;
+    z-index: 10;
 }
 
 @keyframes slip-in {

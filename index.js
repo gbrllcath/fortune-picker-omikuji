@@ -7,11 +7,13 @@ const getFortuneBtn = document.getElementById('get-fortune-btn')
 const modal = document.getElementById('fortuneslip-modal')
 const modalInner = document.getElementById('fortuneslip-modal-inner')
 const modalCloseBtn = document.getElementById('fortuneslip-modal-close-btn')
+const backdrop = document.getElementById('backdrop')
 
 categoryRadios.addEventListener('change', highlightCheckedOption)
 luckyDrawOption.addEventListener('change', handleLuckyDraw)
 modalCloseBtn.addEventListener('click', closeModal)
 getFortuneBtn.addEventListener('click', renderFortune)
+backdrop.addEventListener('click', closeModal)
 
 function clearRadioHighlights(){
     const radios = document.getElementsByClassName('radio')
@@ -47,6 +49,8 @@ function closeModal(){
     setTimeout(function(){
         modal.style.display = 'none'
         modal.classList.remove('closing')
+        getFortuneBtn.disabled = false
+        backdrop.classList.remove('show')
     }, 250)
 }
 
@@ -64,6 +68,9 @@ function renderFortune(){
         <p class="slip-message">${fortune.message}</p>
     `
     modal.style.display = 'flex'
+    getFortuneBtn.disabled = true
+
+    backdrop.classList.add('show')
 }
 
 function getSingleFortuneObject(){
