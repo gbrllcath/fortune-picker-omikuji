@@ -13,7 +13,6 @@ categoryRadios.addEventListener('change', highlightCheckedOption)
 luckyDrawOption.addEventListener('change', handleLuckyDraw)
 modalCloseBtn.addEventListener('click', closeModal)
 getFortuneBtn.addEventListener('click', renderFortune)
-backdrop.addEventListener('click', closeModal)
 
 function clearRadioHighlights(){
     const radios = document.getElementsByClassName('radio')
@@ -43,6 +42,17 @@ function handleLuckyDraw(){
     luckyDraw.classList.toggle('highlight', luckyDrawOption.checked)
 }
 
+function clearSelection(){
+    const checkedRadio = document.querySelector('input[type="radio"]:checked')
+    if(checkedRadio){
+        checkedRadio.checked = false
+    }
+    clearRadioHighlights()
+
+    luckyDrawOption.checked = false
+    luckyDraw.classList.remove('highlight')
+}
+
 function closeModal(){
     modal.classList.add('closing')
 
@@ -51,6 +61,7 @@ function closeModal(){
         modal.classList.remove('closing')
         getFortuneBtn.disabled = false
         backdrop.classList.remove('show')
+        clearSelection()
     }, 250)
 }
 
